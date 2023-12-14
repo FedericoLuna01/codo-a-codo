@@ -3,15 +3,21 @@ const productos = JSON.parse(fs.readFileSync("./data/database.json", "utf-8"));
 
 const homeView = (req, res) => {
   const colecciones = [];
-  const existeCategoria = [];
+  const existeLicencia = [];
   productos.forEach((producto) => {
-    if (!existeCategoria.includes(producto.categoria)) {
-      existeCategoria.push(producto.categoria);
+    if (!existeLicencia.includes(producto.licencia)) {
+      existeLicencia.push(producto.licencia);
       colecciones.push(producto);
     }
   });
 
-  res.render("home", { titulo: "HOME", colecciones: colecciones });
+  const lanzamientos = productos.slice(0, 5);
+
+  res.render("home", {
+    titulo: "HOME",
+    colecciones,
+    lanzamientos,
+  });
 };
 
 const contactView = (req, res) => {

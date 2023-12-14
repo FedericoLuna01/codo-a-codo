@@ -9,7 +9,7 @@ const {
   faqsView,
 } = require("../controllers/MainControllers.js");
 
-router.get("/home", homeView);
+router.get("/", homeView);
 router.get("/contact", contactView);
 router.get("/about", aboutView);
 router.get("/faqs", faqsView);

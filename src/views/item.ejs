@@ -4,134 +4,134 @@
 
   <body>
     <%- include('./partials/header.ejs') %>
-    <main>
-      <!-- Item -->
-      <section class="item-container container">
-        <picture>
-          <img src=<%=producto.imagenCara%> alt="Baby yoda">
-        </picture>
-        <div class="item__info">
-          <p class="item__category">
-            <%=producto.categoria%>
-          </p>
-          <p class="item__name">
-            <%=producto.nombreProducto%>
-          </p>
-          <p class="item__description">Figura coleccionable de <%=producto.nombreProducto%>, edición limitada.</p>
-          <p class="item__price">$ <%=producto.precio.toFixed(2)%>
-          </p>
-          <form class="item__form">
-            <div class="item__inputgroup">
-              <input type="number" class="form__input" value=0>
-              <div class="form__actions">
-                <span class="actions__button">+</span>
-                <span class="actions__button">-</span>
+      <main>
+        <!-- Item -->
+        <section class="item-container container">
+          <picture>
+            <img src=<%=producto.imagenCara%> alt="Baby yoda">
+          </picture>
+          <div class="item__info">
+            <p class="item__category">
+              <%=producto.licencia%>
+            </p>
+            <p class="item__name">
+              <%=producto.nombreProducto%>
+            </p>
+            <p class="item__description">Figura coleccionable de <%=producto.nombreProducto%>, edición limitada.</p>
+            <p class="item__price">$ <%=producto.precio.toFixed(2)%>
+            </p>
+            <form class="item__form">
+              <div class="item__inputgroup">
+                <input type="number" class="form__input" value=0>
+                <div class="form__actions">
+                  <span class="actions__button">+</span>
+                  <span class="actions__button">-</span>
+                </div>
               </div>
+              <button class="form__button">Agregar al Carrito</button>
+            </form>
+            <div class="item__pagos">
+              <p class="item__methods">Ver métodos de pago </p>
+              <span class="item__cuotas">&#160- <%=producto.cuotas%> cuotas sin interés</span>
             </div>
-            <button class="form__button">Agregar al Carrito</button>
-          </form>
-          <div class="item__pagos">
-            <p class="item__methods">Ver métodos de pago </p>
-            <span class="item__cuotas">&#160- <%=producto.cuotas%> cuotas sin interés</span>
           </div>
-        </div>
-      </section>
-      <!-- Productos relacionados -->
-      <section class="lanzamientos container">
-        <h2 class="lanzamientos__title">Productos relacionados</h2>
-        <div class="glide">
-          <div data-glide-el="track" class="glide__track">
-            <ul class="lanzamientos__list glide__slides">
-              <li class="lanzamientos__card glide__slide">
-                <a href="">
-                  <span class="card__span">Nuevo</span>
-                  <picture class="card__picture">
-                    <img class="card__image" onmouseover="this.src='/img/star-wars/trooper-box.webp'"
-                      onmouseout="this.src='/img/star-wars/trooper-1.webp'" src="/img/star-wars/trooper-1.webp"
-                      alt="Trooper" />
-                  </picture>
-                  <div class="card__info">
-                    <p class="card__category">Star wars</p>
-                    <h3 class="card__title">STORMTROOPER LIGHTSABER</h3>
-                    <p class="card__price">$ 1799,99</p>
-                    <p class="card__payments">3 CUOTAS SIN INTERÉS</p>
-                  </div>
-                </a>
-              </li>
-              <li class="lanzamientos__card glide__slide">
-                <a href="">
-                  <span class="card__span">Nuevo</span>
-                  <picture class="card__picture">
-                    <img class="card__image" onmouseover="this.src='/img/pokemon/pidgeotto-box.webp'"
-                      onmouseout="this.src='/img/pokemon/pidgeotto-1.webp'" src="/img/pokemon/pidgeotto-1.webp"
-                      alt="Pidgeotto" />
-                  </picture>
-                  <div class="card__info">
-                    <p class="card__category">Pokemon</p>
-                    <h3 class="card__title">PIDGEOTTO</h3>
-                    <p class="card__price">$ 1799,99</p>
-                    <p class="card__payments">3 CUOTAS SIN INTERÉS</p>
-                  </div>
-                </a>
-              </li>
-              <li class="lanzamientos__card glide__slide">
-                <a href="">
-                  <span class="card__span">Nuevo</span>
-                  <picture class="card__picture">
-                    <img class="card__image" onmouseover="this.src='/img/harry-potter/luna-box.webp'"
-                      onmouseout="this.src='/img/harry-potter/luna-1.webp'" src="/img/harry-potter/luna-1.webp"
-                      alt="" />
-                  </picture>
-                  <div class="card__info">
-                    <p class="card__category">HARRY POTTER</p>
-                    <h3 class="card__title">LUNA LOVEGOOD LION MASK</h3>
-                    <p class="card__price">$ 1799,99</p>
-                    <p class="card__payments">3 CUOTAS SIN INTERÉS</p>
-                  </div>
-                </a>
-              </li>
-              <li class="lanzamientos__card glide__slide">
-                <a href="">
-                  <span class="card__span">Nuevo</span>
-                  <picture class="card__picture">
-                    <img class="card__image" onmouseover="this.src='/img/harry-potter/harry-box.webp'"
-                      onmouseout="this.src='/img/harry-potter/harry-1.webp'" src="/img/harry-potter/harry-1.webp"
-                      alt="" />
-                  </picture>
-                  <div class="card__info">
-                    <p class="card__category">HARRY POTTER</p>
-                    <h3 class="card__title">LUNA LOVEGOOD LION MASK</h3>
-                    <p class="card__price">$ 1799,99</p>
-                    <p class="card__payments">3 CUOTAS SIN INTERÉS</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
+        </section>
+        <!-- Productos relacionados -->
+        <section class="lanzamientos container">
+          <h2 class="lanzamientos__title">Productos relacionados</h2>
+          <div class="glide">
+            <div data-glide-el="track" class="glide__track">
+              <ul class="lanzamientos__list glide__slides">
+                <li class="lanzamientos__card glide__slide">
+                  <a href="">
+                    <span class="card__span">Nuevo</span>
+                    <picture class="card__picture">
+                      <img class="card__image" onmouseover="this.src='/img/star-wars/trooper-box.webp'"
+                        onmouseout="this.src='/img/star-wars/trooper-1.webp'" src="/img/star-wars/trooper-1.webp"
+                        alt="Trooper" />
+                    </picture>
+                    <div class="card__info">
+                      <p class="card__category">Star wars</p>
+                      <h3 class="card__title">STORMTROOPER LIGHTSABER</h3>
+                      <p class="card__price">$ 1799,99</p>
+                      <p class="card__payments">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="lanzamientos__card glide__slide">
+                  <a href="">
+                    <span class="card__span">Nuevo</span>
+                    <picture class="card__picture">
+                      <img class="card__image" onmouseover="this.src='/img/pokemon/pidgeotto-box.webp'"
+                        onmouseout="this.src='/img/pokemon/pidgeotto-1.webp'" src="/img/pokemon/pidgeotto-1.webp"
+                        alt="Pidgeotto" />
+                    </picture>
+                    <div class="card__info">
+                      <p class="card__category">Pokemon</p>
+                      <h3 class="card__title">PIDGEOTTO</h3>
+                      <p class="card__price">$ 1799,99</p>
+                      <p class="card__payments">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="lanzamientos__card glide__slide">
+                  <a href="">
+                    <span class="card__span">Nuevo</span>
+                    <picture class="card__picture">
+                      <img class="card__image" onmouseover="this.src='/img/harry-potter/luna-box.webp'"
+                        onmouseout="this.src='/img/harry-potter/luna-1.webp'" src="/img/harry-potter/luna-1.webp"
+                        alt="" />
+                    </picture>
+                    <div class="card__info">
+                      <p class="card__category">HARRY POTTER</p>
+                      <h3 class="card__title">LUNA LOVEGOOD LION MASK</h3>
+                      <p class="card__price">$ 1799,99</p>
+                      <p class="card__payments">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="lanzamientos__card glide__slide">
+                  <a href="">
+                    <span class="card__span">Nuevo</span>
+                    <picture class="card__picture">
+                      <img class="card__image" onmouseover="this.src='/img/harry-potter/harry-box.webp'"
+                        onmouseout="this.src='/img/harry-potter/harry-1.webp'" src="/img/harry-potter/harry-1.webp"
+                        alt="" />
+                    </picture>
+                    <div class="card__info">
+                      <p class="card__category">HARRY POTTER</p>
+                      <h3 class="card__title">LUNA LOVEGOOD LION MASK</h3>
+                      <p class="card__price">$ 1799,99</p>
+                      <p class="card__payments">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="2" stroke="gray" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M15 6l-6 6l6 6"></path>
+                </svg>
+              </button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24"
+                  height="24" viewBox="0 0 24 24" stroke-width="2" stroke="gray" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24"
-                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="gray" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M15 6l-6 6l6 6"></path>
-              </svg>
-            </button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24"
-                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="gray" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M9 6l6 6l-6 6"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <%- include('./partials/footer.ejs') %>
-    <%- include('./partials/scripts.ejs') %>
+      <%- include('./partials/footer.ejs') %>
+        <%- include('./partials/scripts.ejs') %>
   </body>
 
 </html>

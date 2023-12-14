@@ -60,14 +60,14 @@
             <% productos.forEach(producto=>{%>
               <div class="item_box">
                 <span>Nuevo</span>
-                <img src=<%=producto.imagenCara%> alt=<%=producto.nombreProducto%>/>
+                <img src=<%=producto.imagenCara%> alt=<%=producto.nombre%>/>
                   <div class="item_description-container">
                     <p>
-                      <%=producto.categoria%>
+                      <%=producto.licencia%>
                     </p>
                     <h2>
                       <a href="/shop/item/<%=producto.id%>">
-                        <%=producto.nombreProducto%>
+                        <%=producto.nombre%>
                       </a>
                     </h2>
                     <p>$ <%=producto.precio.toFixed(2)%>
