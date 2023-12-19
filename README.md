@@ -16,6 +16,12 @@ En esta primer etapa y mission vamos a crear una estructura HTML de las diferent
   npm i
 ```
 
+## Setup de .env
+
+```js
+  PORT = <variable>
+```
+
 ## Iniciar proyecto
 
 ```bash

@@ -1,5 +1,3 @@
-const { Producto } = require("../models/Producto");
-
 const adminView = (req, res) => {
   res.render("listProds", { titulo: "ADMIN" });
 };

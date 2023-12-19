@@ -59,16 +59,26 @@
             <!-- SHOP -->
             <% productos.forEach(producto=>{%>
               <div class="item_box">
+<<<<<<< HEAD
                 <span>Nuevo</span>
                 <img src=<%=producto.imagenCara%> alt=<%=producto.nombre%>/>
+=======
+                <a href="/shop/item/<%=producto.id%>">
+                  <span>Nuevo</span>
+                  <img src=<%=producto.imagenCara%> alt=<%=producto.nombreProducto%>/>
+>>>>>>> a088670ec71487cb1f76aeb841586dcb22c739ef
                   <div class="item_description-container">
                     <p>
                       <%=producto.licencia%>
                     </p>
                     <h2>
+<<<<<<< HEAD
                       <a href="/shop/item/<%=producto.id%>">
                         <%=producto.nombre%>
                       </a>
+=======
+                        <%=producto.nombreProducto%>
+>>>>>>> a088670ec71487cb1f76aeb841586dcb22c739ef
                     </h2>
                     <p>$ <%=producto.precio.toFixed(2)%>
                     </p>
@@ -76,6 +86,7 @@
                       <%=producto.cuota%> cuotas sin interes
                     </h3>
                   </div>
+                </a>
               </div>
               <%})%>
           </section>

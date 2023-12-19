@@ -11,6 +11,7 @@ const homeView = (req, res) => {
     }
   });
 
+<<<<<<< HEAD
   const lanzamientos = productos.slice(0, 5);
 
   res.render("home", {
@@ -18,6 +19,9 @@ const homeView = (req, res) => {
     colecciones,
     lanzamientos,
   });
+=======
+  res.render("home", { titulo: "CaC - Home", colecciones: colecciones });
+>>>>>>> a088670ec71487cb1f76aeb841586dcb22c739ef
 };
 
 const contactView = (req, res) => {
